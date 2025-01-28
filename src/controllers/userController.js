@@ -1,6 +1,8 @@
 // src/controllers/userController.js
 exports.createUser = async (req, res) => {
     try {
+      console.log("Create User");
+      console.log(req.body);
       const userData = req.body.payload;
   
       // Simulate user creation and return a unique user ID

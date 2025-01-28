@@ -1,6 +1,9 @@
 // src/controllers/ticketController.js
 exports.closeTicket = async (req, res) => {
     try {
+
+      console.log("Close Ticket");
+      console.log(req.body);
       const { botpressConversationId } = req.body.payload;
   
       // Simulate closing the ticket
